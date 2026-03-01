@@ -1,0 +1,156 @@
+# pylith documentation map: Examples and Tutorials
+
+Generated from documentation roots:
+- `docs`
+- `release-notes`
+- `examples`
+- `docs/user/examples`
+- `tests`
+- `pylith/testing`
+
+Total docs grouped in this topic: 143
+
+## File inventory
+- `examples/README.md` | title: Examples | headings: Examples; 2d/box; 3d/box
+- `examples/reverse-2d/README.md` | title: Examples: 2-D Reverse Fault and Gravitational Body Forces | headings: Examples: 2-D Reverse Fault and Gravitational Body Forces; Step 1: Gravitational body forces and linear isotropic elasticity; Coarse mesh
+- `examples/poroelastic-outerrise-2d/README.md` | title: Examples: 2D Outer-Rise Hydration Using Poroelasticity | headings: Examples: 2D Outer-Rise Hydration Using Poroelasticity; Meshing; Generate spatial databases
+- `examples/crustal-strikeslip-2d/README.md` | title: Examples: Crustal 2D strike-slip faults | headings: Examples: Crustal 2D strike-slip faults; Mesh generation using Gmsh (optional); Mesh generation using Cubit (optional)
+- `examples/subduction-3d/scratch/README.md` | title: Directory for generated files | headings: Directory for generated files
+- `docs/user/components/faults/FaultCohesiveImpulses.md` | title: FaultCohesiveImpulses | headings: FaultCohesiveImpulses; Pyre Facilities; Pyre Properties
+- `docs/user/components/problems/GreensFns.md` | title: GreensFns | headings: GreensFns; Pyre Facilities; Pyre Properties
+- `docs/user/examples/troubleshooting-2d/step06-error09.md` | title: Step 6: Error 9 | headings: Step 6: Error 9; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/step06-error08.md` | title: Step 6: Error 8 | headings: Step 6: Error 8; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/step06-error07.md` | title: Step 6: Error 7 | headings: Step 6: Error 7; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/step06-error05.md` | title: Step 6: Error 5 | headings: Step 6: Error 5; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/step06-error04.md` | title: Step 6: Error 4 | headings: Step 6: Error 4; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/step06-error03.md` | title: Step 6: Error 3 | headings: Step 6: Error 3; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/step06-error02.md` | title: Step 6: Error 2 | headings: Step 6: Error 2; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/step06-error01.md` | title: Step 6: Error 1 | headings: Step 6: Error 1; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/step01-error05.md` | title: Step 1: Error 5 | headings: Step 1: Error 5; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/step01-error04.md` | title: Step 1: Error 4 | headings: Step 1: Error 4; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/step01-error02.md` | title: Step 1: Error 2 | headings: Step 1: Error 2; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/step01-error01.md` | title: Step 1: Error 1 | headings: Step 1: Error 1; Error Message; Troubleshooting Strategy
+- `docs/user/examples/examples-other.md` | title: Additional Examples | headings: Additional Examples; Cubit Meshing Examples; Troubleshooting Examples
+- `docs/developer/testing/mmstests.md` | title: Method of Manufactured Solutions | headings: Method of Manufactured Solutions; Debugging residual errors; Debugging Jacobian errors
+- `docs/user/governingeqns/elasticity/infinitesimal-strain.md` | title: Infinitesimal Strain and No Faults | headings: Infinitesimal Strain and No Faults; \rho \frac{\partial^2\vec{u}}{\partial t^2} - \vec{f}(\vec{x},t) - \boldsymbol{\nabla} \cdot \boldsymbol{\sigma} (\vec{u}) = \vec{0} \text{ in }\Omega,; \boldsymbol{\sigma} \cdot \vec{n} = \vec{\tau}(\vec{x},t) \text{ on }\Gamma_\tau,
+- `docs/user/components/problems/InitialConditionDomain.md` | title: InitialConditionDomain | headings: InitialConditionDomain; Pyre Facilities; Pyre Properties
+- `docs/user/components/topology/RefineUniform.md` | title: RefineUniform | headings: RefineUniform; Pyre Properties; Example
+- `docs/user/components/topology/MeshImporter.md` | title: MeshImporter | headings: MeshImporter; Pyre Facilities; Pyre Properties
+- `docs/user/components/topology/Distributor.md` | title: Distributor | headings: Distributor; Pyre Facilities; Pyre Properties
+- `docs/user/components/meshio/PointsList.md` | title: PointsList | headings: PointsList; Pyre Facilities; Pyre Properties
+- `docs/user/components/meshio/MeshIOPetsc.md` | title: MeshIOPetsc | headings: MeshIOPetsc; Pyre Facilities; Pyre Properties
+- `docs/user/components/meshio/MeshIOCubit.md` | title: MeshIOCubit | headings: MeshIOCubit; Pyre Facilities; Pyre Properties
+- `docs/user/components/meshio/MeshIOAscii.md` | title: MeshIOAscii | headings: MeshIOAscii; Pyre Facilities; Pyre Properties
+- `docs/user/components/faults/KinSrcTimeHistory.md` | title: KinSrcTimeHistory | headings: KinSrcTimeHistory; Pyre Facilities; Pyre Properties
+- `docs/user/components/faults/KinSrcStep.md` | title: KinSrcStep | headings: KinSrcStep; Pyre Facilities; Pyre Properties
+- `docs/user/components/faults/KinSrcRamp.md` | title: KinSrcRamp | headings: KinSrcRamp; Pyre Facilities; Pyre Properties
+- `docs/user/components/faults/KinSrcLiuCos.md` | title: KinSrcLiuCos | headings: KinSrcLiuCos; Pyre Facilities; Pyre Properties
+- `docs/user/components/faults/KinSrcConstRate.md` | title: KinSrcConstRate | headings: KinSrcConstRate; Pyre Facilities; Pyre Properties
+- `docs/user/components/bc/AbsorbingDampers.md` | title: AbsorbingDampers | headings: AbsorbingDampers; Pyre Facilities; Pyre Properties
+- `examples/reverse-2d/powerlaw_points.txt` | title: Locations at which we want to output power-law properties. | headings: Locations at which we want to output power-law properties.
+- `docs/developer/contributing/new-example.md` | title: Creating a new example | headings: Creating a new example; Checklist
+- `docs/user/components/utils/PetscDefaults.md` | title: PetscDefaults | headings: PetscDefaults; Pyre Properties; Example
+- `docs/user/components/utils/DumpParametersJson.md` | title: DumpParametersJson | headings: DumpParametersJson; Pyre Properties; Example
+- `docs/user/components/utils/DumpParametersAscii.md` | title: DumpParametersAscii | headings: DumpParametersAscii; Pyre Properties; Example
+- `docs/user/components/problems/SubfieldVelocity.md` | title: SubfieldVelocity | headings: SubfieldVelocity; Pyre Properties; Example
+- `docs/user/components/problems/SubfieldTraceStrainDot.md` | title: SubfieldTraceStrainDot | headings: SubfieldTraceStrainDot; Pyre Properties; Example
+- `docs/user/components/problems/SubfieldTraceStrain.md` | title: SubfieldTraceStrain | headings: SubfieldTraceStrain; Pyre Properties; Example
+- `docs/user/components/problems/SubfieldTemperature.md` | title: SubfieldTemperature | headings: SubfieldTemperature; Pyre Properties; Example
+- `docs/user/components/problems/SubfieldPressureDot.md` | title: SubfieldPressureDot | headings: SubfieldPressureDot; Pyre Properties; Example
+- `docs/user/components/problems/SubfieldPressure.md` | title: SubfieldPressure | headings: SubfieldPressure; Pyre Properties; Example
+- `docs/user/components/problems/SubfieldLagrangeFault.md` | title: SubfieldLagrangeFault | headings: SubfieldLagrangeFault; Pyre Properties; Example
+- `docs/user/components/problems/SubfieldDisplacement.md` | title: SubfieldDisplacement | headings: SubfieldDisplacement; Pyre Properties; Example
+- `docs/user/components/problems/SolnDispVelLagrange.md` | title: SolnDispVelLagrange | headings: SolnDispVelLagrange; Pyre Facilities; Example
+- `docs/user/components/problems/SolnDispVel.md` | title: SolnDispVel | headings: SolnDispVel; Pyre Facilities; Example
+- `docs/user/components/problems/SolnDispPresVel.md` | title: SolnDispPresVel | headings: SolnDispPresVel; Pyre Facilities; Example
+- `docs/user/components/problems/SolnDispPresTracStrainVelPdotTdotLagrange.md` | title: SolnDispPresTracStrainVelPdotTdotLagrange | headings: SolnDispPresTracStrainVelPdotTdotLagrange; Pyre Facilities; Example
+- `docs/user/components/problems/SolnDispPresTracStrainVelPdotTdot.md` | title: SolnDispPresTracStrainVelPdotTdot | headings: SolnDispPresTracStrainVelPdotTdot; Pyre Facilities; Example
+- `docs/user/components/problems/SolnDispPresTracStrainLagrange.md` | title: SolnDispPresTracStrainLagrange | headings: SolnDispPresTracStrainLagrange; Pyre Facilities; Example
+- `docs/user/components/problems/SolnDispPresTracStrain.md` | title: SolnDispPresTracStrain | headings: SolnDispPresTracStrain; Pyre Facilities; Example
+- `docs/user/components/problems/SolnDispPresLagrange.md` | title: SolnDispPresLagrange | headings: SolnDispPresLagrange; Pyre Facilities; Example
+- `docs/user/components/problems/SolnDispPres.md` | title: SolnDispPres | headings: SolnDispPres; Pyre Facilities; Example
+- `docs/user/components/problems/SolnDispLagrange.md` | title: SolnDispLagrange | headings: SolnDispLagrange; Pyre Facilities; Example
+- `docs/user/components/problems/ProgressMonitorTime.md` | title: ProgressMonitorTime | headings: ProgressMonitorTime; Pyre Properties; Example
+- `docs/user/components/problems/ProgressMonitorStep.md` | title: ProgressMonitorStep | headings: ProgressMonitorStep; Pyre Properties; Example
+- `docs/user/components/problems/ProblemDefaults.md` | title: ProblemDefaults | headings: ProblemDefaults; Pyre Properties; Example
+- `docs/user/components/meshio/OutputTriggerTime.md` | title: OutputTriggerTime | headings: OutputTriggerTime; Pyre Properties; Example
+- `docs/user/components/meshio/OutputTriggerStep.md` | title: OutputTriggerStep | headings: OutputTriggerStep; Pyre Properties; Example
+- `docs/user/components/meshio/DataWriterVTK.md` | title: DataWriterVTK | headings: DataWriterVTK; Pyre Properties; Example
+- `docs/user/components/meshio/DataWriterHDF5Ext.md` | title: DataWriterHDF5Ext | headings: DataWriterHDF5Ext; Pyre Properties; Example
+- `docs/user/components/meshio/DataWriterHDF5.md` | title: DataWriterHDF5 | headings: DataWriterHDF5; Pyre Properties; Example
+- `docs/user/components/bc/AuxSubfieldsTimeDependent.md` | title: AuxSubfieldsTimeDependent | headings: AuxSubfieldsTimeDependent; Pyre Facilities; Example
+- `docs/user/components/bc/AuxSubfieldsAbsorbingDampers.md` | title: AuxSubfieldsAbsorbingDampers | headings: AuxSubfieldsAbsorbingDampers; Pyre Facilities; Example
+- `examples/subduction-3d/cgnss_stations.txt` | title: Cgnss Stations | headings: (no heading extracted)
+- `examples/crustal-strikeslip-3d/faulttrace_west_utm.txt` | title: Faulttrace West Utm | headings: (no heading extracted)
+- `examples/crustal-strikeslip-3d/faulttrace_west_latlon.txt` | title: Faulttrace West Latlon | headings: (no heading extracted)
+- `examples/crustal-strikeslip-3d/faulttrace_main_utm.txt` | title: Faulttrace Main Utm | headings: (no heading extracted)
+- `examples/crustal-strikeslip-3d/faulttrace_main_latlon.txt` | title: Faulttrace Main Latlon | headings: (no heading extracted)
+- `examples/crustal-strikeslip-3d/faulttrace_east_utm.txt` | title: Faulttrace East Utm | headings: (no heading extracted)
+- `examples/crustal-strikeslip-3d/faulttrace_east_latlon.txt` | title: Faulttrace East Latlon | headings: (no heading extracted)
+- `examples/crustal-strikeslip-2d/faulttrace_west_utm.txt` | title: Faulttrace West Utm | headings: (no heading extracted)
+- `examples/crustal-strikeslip-2d/faulttrace_west_latlon.txt` | title: Faulttrace West Latlon | headings: (no heading extracted)
+- `examples/crustal-strikeslip-2d/faulttrace_main_utm.txt` | title: Faulttrace Main Utm | headings: (no heading extracted)
+- `examples/crustal-strikeslip-2d/faulttrace_main_latlon.txt` | title: Faulttrace Main Latlon | headings: (no heading extracted)
+- `examples/crustal-strikeslip-2d/faulttrace_east_utm.txt` | title: Faulttrace East Utm | headings: (no heading extracted)
+- `examples/crustal-strikeslip-2d/faulttrace_east_latlon.txt` | title: Faulttrace East Latlon | headings: (no heading extracted)
+- `docs/user/governingeqns/incompressible-elasticity/infinitesimal-strain.md` | title: Infinitesimal Strain (Bathe) and No Faults | headings: Infinitesimal Strain (Bathe) and No Faults; | Source terms                   |             $\vec{f}$              | Body force per unit volume, for example $\rho \vec{g}$     |
+- `docs/user/components/utils/PetscManager.md` | title: PetscManager | headings: PetscManager; Example
+- `examples/meshing-cubit/surface-nurbs/subduction/topobath_points.txt` | title: Grid of points to define DEM of topography/bathymetry. | headings: Grid of points to define DEM of topography/bathymetry.
+- `docs/user/examples/troubleshooting-2d/step06-twofaults.md` | title: Step 6: Slip on Two Faults | headings: Step 6: Slip on Two Faults
+- `docs/user/examples/troubleshooting-2d/step01-gravity.md` | title: Step 1: Gravitational Body Forces | headings: Step 1: Gravitational Body Forces
+- `docs/user/examples/subduction-3d/step05-spontaneous.md` | title: Step 5: Spontaneous Rupture Driven by Subducting Slab | headings: Step 5: Spontaneous Rupture Driven by Subducting Slab
+- `docs/user/examples/subduction-3d/exercises.md` | title: Suggested Exercises | headings: Suggested Exercises
+- `docs/user/examples/subduction-3d/common-information.md` | title: Common Information | headings: Common Information
+- `docs/user/examples/subduction-2d/exercises.md` | title: Suggested Exercises | headings: Suggested Exercises
+- `docs/user/examples/strikeslip-2d/exercises.md` | title: Suggested Exercises | headings: Suggested Exercises
+- `docs/user/examples/reverse-2d/exercises.md` | title: Suggested Exercises | headings: Suggested Exercises
+- `docs/user/examples/poroelastic-outerrise-2d/exercises.md` | title: Suggested Exercises | headings: Suggested Exercises
+- `docs/user/examples/magma-2d/exercises.md` | title: Suggested Exercises | headings: Suggested Exercises
+- `docs/user/examples/crustal-strikeslip-3d/exercises.md` | title: Suggested Exercises | headings: Suggested Exercises
+- `docs/user/examples/crustal-strikeslip-2d/exercises.md` | title: Suggested Exercises | headings: Suggested Exercises
+- `docs/user/examples/box-3d/exercises.md` | title: Suggested Exercises | headings: Suggested Exercises
+- `docs/user/examples/box-2d/meshing.md` | title: Mesh Description | headings: Mesh Description
+- `docs/user/examples/box-2d/exercises.md` | title: Suggested Exercises | headings: Suggested Exercises
+- `examples/meshing-cubit/surface-nurbs/dem/ruapehu-nzmg-1km.txt` | title: Ruapehu Nzmg 1km | headings: (no heading extracted)
+- `docs/user/examples/subduction-3d/step08a_gravity_refstate-synopsis.md` | title: Step08a Gravity Refstate Synopsis | headings: (no heading extracted)
+- `docs/user/examples/subduction-3d/step07a_leftlateral-synopsis.md` | title: Step07a Leftlateral Synopsis | headings: (no heading extracted)
+- `docs/user/examples/subduction-3d/step06_slowslip-synopsis.md` | title: Step06 Slowslip Synopsis | headings: (no heading extracted)
+- `docs/user/examples/subduction-3d/step04_eqcycle-synopsis.md` | title: Step04 Eqcycle Synopsis | headings: (no heading extracted)
+- `docs/user/examples/subduction-3d/step03_interseismic-synopsis.md` | title: Step03 Interseismic Synopsis | headings: (no heading extracted)
+- `docs/user/examples/subduction-3d/step02_coseismic-synopsis.md` | title: Step02 Coseismic Synopsis | headings: (no heading extracted)
+- `docs/user/examples/subduction-3d/step01_axialdisp-synopsis.md` | title: Step01 Axialdisp Synopsis | headings: (no heading extracted)
+- `docs/user/examples/subduction-2d/step03_eqcycle-synopsis.md` | title: Step03 Eqcycle Synopsis | headings: (no heading extracted)
+- `docs/user/examples/subduction-2d/step02_interseismic-synopsis.md` | title: Step02 Interseismic Synopsis | headings: (no heading extracted)
+- `docs/user/examples/subduction-2d/step01_coseismic-synopsis.md` | title: Step01 Coseismic Synopsis | headings: (no heading extracted)
+- `docs/user/examples/strikeslip-2d/step05_greensfns-synopsis.md` | title: Step05 Greensfns Synopsis | headings: (no heading extracted)
+- `docs/user/examples/strikeslip-2d/step04_varslip-synopsis.md` | title: Step04 Varslip Synopsis | headings: (no heading extracted)
+- `docs/user/examples/strikeslip-2d/step03_multislip_velbc-synopsis.md` | title: Step03 Multislip Velbc Synopsis | headings: (no heading extracted)
+- `docs/user/examples/strikeslip-2d/step02_slip_velbc-synopsis.md` | title: Step02 Slip Velbc Synopsis | headings: (no heading extracted)
+- `docs/user/examples/strikeslip-2d/step01a_slip-synopsis.md` | title: Step01a Slip Synopsis | headings: (no heading extracted)
+- `docs/user/examples/reverse-2d/step08_twofaults_powerlaw-synopsis.md` | title: Step08 Twofaults Powerlaw Synopsis | headings: (no heading extracted)
+- `docs/user/examples/reverse-2d/step07_twofaults_maxwell-synopsis.md` | title: Step07 Twofaults Maxwell Synopsis | headings: (no heading extracted)
+- `docs/user/examples/reverse-2d/step06_twofaults_elastic-synopsis.md` | title: Step06 Twofaults Elastic Synopsis | headings: (no heading extracted)
+- `docs/user/examples/reverse-2d/step05a_onefault-synopsis.md` | title: Step05a Onefault Synopsis | headings: (no heading extracted)
+- `docs/user/examples/reverse-2d/step04a_surfload-synopsis.md` | title: Step04a Surfload Synopsis | headings: (no heading extracted)
+- `docs/user/examples/reverse-2d/step03_gravity_incompressible-synopsis.md` | title: Step03 Gravity Incompressible Synopsis | headings: (no heading extracted)
+- `docs/user/examples/reverse-2d/step02_gravity_refstate-synopsis.md` | title: Step02 Gravity Refstate Synopsis | headings: (no heading extracted)
+- `docs/user/examples/reverse-2d/step01a_gravity-synopsis.md` | title: Step01a Gravity Synopsis | headings: (no heading extracted)
+- `docs/user/examples/poroelastic-outerrise-2d/step03_faults_flexure-synopsis.md` | title: Step03 Faults Flexure Synopsis | headings: (no heading extracted)
+- `docs/user/examples/poroelastic-outerrise-2d/step02_no_faults_flexure-synopsis.md` | title: Step02 No Faults Flexure Synopsis | headings: (no heading extracted)
+- `docs/user/examples/poroelastic-outerrise-2d/step01_no_faults_no_flexure-synopsis.md` | title: Step01 No Faults No Flexure Synopsis | headings: (no heading extracted)
+- `docs/user/examples/magma-2d/step02_inflation_statevars-synopsis.md` | title: Step02 Inflation Statevars Synopsis | headings: (no heading extracted)
+- `docs/user/examples/magma-2d/step01_inflation-synopsis.md` | title: Step01 Inflation Synopsis | headings: (no heading extracted)
+- `docs/user/examples/crustal-strikeslip-3d/step02_varslip-synopsis.md` | title: Step02 Varslip Synopsis | headings: (no heading extracted)
+- `docs/user/examples/crustal-strikeslip-3d/step01_slip-synopsis.md` | title: Step01 Slip Synopsis | headings: (no heading extracted)
+- `docs/user/examples/crustal-strikeslip-2d/step02_varslip-synopsis.md` | title: Step02 Varslip Synopsis | headings: (no heading extracted)
+- `docs/user/examples/crustal-strikeslip-2d/step01_slip-synopsis.md` | title: Step01 Slip Synopsis | headings: (no heading extracted)
+- `docs/user/examples/box-3d/step05_sheardisptractrate-synopsis.md` | title: Step05 Sheardisptractrate Synopsis | headings: (no heading extracted)
+- `docs/user/examples/box-3d/step04_sheardispic-synopsis.md` | title: Step04 Sheardispic Synopsis | headings: (no heading extracted)
+- `docs/user/examples/box-3d/step03_sheardisptract-synopsis.md` | title: Step03 Sheardisptract Synopsis | headings: (no heading extracted)
+- `docs/user/examples/box-3d/step02_sheardisp-synopsis.md` | title: Step02 Sheardisp Synopsis | headings: (no heading extracted)
+- `docs/user/examples/box-3d/step01_axialdisp-synopsis.md` | title: Step01 Axialdisp Synopsis | headings: (no heading extracted)
+- `docs/user/examples/box-2d/step05_sheardisptractrate-synopsis.md` | title: Step05 Sheardisptractrate Synopsis | headings: (no heading extracted)
+- `docs/user/examples/box-2d/step04_sheardispic-synopsis.md` | title: Step04 Sheardispic Synopsis | headings: (no heading extracted)
+- `docs/user/examples/box-2d/step03_sheardisptract-synopsis.md` | title: Step03 Sheardisptract Synopsis | headings: (no heading extracted)
+- `docs/user/examples/box-2d/step02_sheardisp-synopsis.md` | title: Step02 Sheardisp Synopsis | headings: (no heading extracted)
+- `docs/user/examples/box-2d/step01_axialdisp-synopsis.md` | title: Step01 Axialdisp Synopsis | headings: (no heading extracted)

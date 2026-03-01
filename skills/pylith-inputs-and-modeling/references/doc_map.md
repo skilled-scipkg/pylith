@@ -1,0 +1,123 @@
+# pylith documentation map: Inputs and Modeling
+
+Generated from documentation roots:
+- `docs`
+- `release-notes`
+- `examples`
+- `docs/user/examples`
+- `tests`
+- `pylith/testing`
+
+Total docs grouped in this topic: 110
+
+## File inventory
+- `examples/barwaves-2d/README.md` | title: Examples: Shear wave propagating down a bar | headings: Examples: Shear wave propagating down a bar; Step01: Dilatational wave using a time-dependent Dirichlet boundary condition; Step02: Shear wave using a time-dependent Neumann boundary condition
+- `examples/subduction-2d/README.md` | title: Examples: 2D Subduction | headings: Examples: 2D Subduction; Mesh generation using Gmsh (optional); Step 1: Coseismic slip simulation
+- `examples/strikeslip-2d/README.md` | title: Examples: 2D Strike-Slip Fault | headings: Examples: 2D Strike-Slip Fault; Meshing; Step 1: Static Coseismic Slip
+- `examples/box-3d/README.md` | title: Axial and Shear Deformation in a 3D Box | headings: Axial and Shear Deformation in a 3D Box; Step 1: Axial extension with Dirichlet boundary conditions; Step 2: Simple shear with Dirichlet boundary conditions
+- `examples/box-2d/README.md` | title: Axial and Shear Deformation in a 2D Box | headings: Axial and Shear Deformation in a 2D Box; Step 1: Axial extension with Dirichlet boundary conditions; Step 2:  Simple shear with Dirichlet boundary conditions
+- `docs/user/physics/bc/index.md` | title: Boundary Conditions | headings: Boundary Conditions; Assigning boundary conditions; Marking boundaries when meshing
+- `examples/subduction-3d/input/README.md` | title: Directory for simulation input data that must be downloaded | headings: Directory for simulation input data that must be downloaded; Cubit Mesh; gunzip mesh_tet.exo.gz
+- `docs/user/physics/materials/index.md` | title: Materials | headings: Materials; Specifying Material Properties; Material Implementations
+- `docs/user/components/materials/index.md` | title: materials | headings: materials; :::{toctree}; maxdepth: 1
+- `docs/user/meshing/gmsh.md` | title: Gmsh | headings: Gmsh; Gmsh tips; Built-in CAD engine
+- `docs/user/run-pylith/mesh.md` | title: Finite-Element Mesh | headings: Finite-Element Mesh; Mesh Importer; ASCII Mesh Files - `MeshIOAscii`
+- `docs/user/governingeqns/petsc-formulation.md` | title: Finite-Element Formulation with PETSc | headings: Finite-Element Formulation with PETSc; Jacobian; PETSc TS Notes
+- `docs/user/components/implementations.md` | title: Component Implementations | headings: Component Implementations; Problems; Materials
+- `docs/developer/implementation/object-organization.md` | title: Code Structure | headings: Code Structure; Legend for class diagrams; Application
+- `docs/developer/debugging/tools.md` | title: Debugging tools | headings: Debugging tools; VS Code integration; C++ unit test
+- `docs/developer/contributing/coding-style.md` | title: Coding Style | headings: Coding Style; General guidelines; Formatting source files
+- `docs/user/examples/reverse-2d/common-information.md` | title: Common Information | headings: Common Information; ```{code-block} cfg; caption: Parameters for output of the solution over the domain and ground surface (+y boundary).
+- `docs/user/components/meshio/OutputSolnDomain.md` | title: OutputSolnDomain | headings: OutputSolnDomain; Pyre Facilities; Pyre Properties
+- `docs/user/examples/troubleshooting-2d/step01-error03.md` | title: Step 1: Error 3 | headings: Step 1: Error 3; Error Message; Troubleshooting Strategy
+- `docs/user/examples/troubleshooting-2d/error-messages.md` | title: Error Messages | headings: Error Messages; Configuration Errors; Runtime Errors
+- `docs/user/examples/subduction-2d/step01-coseismic.md` | title: Step 1: Static Coseismic Slip | headings: Step 1: Static Coseismic Slip; Simulation parameters; Running the simulation
+- `docs/user/examples/subduction-2d/meshing-gmsh.md` | title: Gmsh Mesh | headings: Gmsh Mesh; Geometry; Meshing using Python Script
+- `docs/user/examples/subduction-2d/common-information.md` | title: Common Information | headings: Common Information; Metadata, Mesh, and Output; Physics
+- `docs/user/examples/strikeslip-2d/step07-inversion-catmip.md` | title: Step 7: Bayesian Fault Slip Inversion | headings: Step 7: Bayesian Fault Slip Inversion; Inversion using original CATMIP algorithm; Use 100 samples and Markov chains with a length of 50
+- `docs/user/examples/strikeslip-2d/step04-varslip.md` | title: Step 4: Variable Coseismic Slip | headings: Step 4: Variable Coseismic Slip; Simulation parameters; Running the simulation
+- `docs/user/examples/strikeslip-2d/step03-multislip-velbc.md` | title: Step 3: Multiple Earthquake Ruptures and Velocity Boundary Conditions | headings: Step 3: Multiple Earthquake Ruptures and Velocity Boundary Conditions; Simulation parameters; Running the simulation
+- `docs/user/examples/strikeslip-2d/step02-slip-velbc.md` | title: Step 2: Single Earthquake Rupture and Velocity Boundary Conditions | headings: Step 2: Single Earthquake Rupture and Velocity Boundary Conditions; Simulation parameters; Boundary conditions
+- `docs/user/examples/strikeslip-2d/meshing-gmsh.md` | title: Gmsh Mesh | headings: Gmsh Mesh; Geometry; Meshing using Python Script
+- `docs/user/examples/strikeslip-2d/common-information.md` | title: Common Information | headings: Common Information; Metadata, Mesh, and Output; Physics
+- `docs/user/examples/reverse-2d/step08-twofaults-powerlaw.md` | title: Step 8: Slip on Two Faults and Power-law Viscoelastic Materials | headings: Step 8: Slip on Two Faults and Power-law Viscoelastic Materials; Simulation parameters; Elastic properties
+- `docs/user/examples/reverse-2d/step07-twofaults-maxwell.md` | title: Step 7: Slip on Two Faults and Maxwell Viscoelastic Materials | headings: Step 7: Slip on Two Faults and Maxwell Viscoelastic Materials; Simulation parameters; Running the simulation
+- `docs/user/examples/reverse-2d/step06-twofaults-elastic.md` | title: Step 6: Slip on Two Faults and Elastic Materials | headings: Step 6: Slip on Two Faults and Elastic Materials; Simulation parameters; Running the simulation
+- `docs/user/examples/reverse-2d/step02-gravity-refstate.md` | title: Step 2: Gravitational Body Forces with Reference Stress | headings: Step 2: Gravitational Body Forces with Reference Stress; Simulation parameters; Running the simulation
+- `docs/user/examples/reverse-2d/meshing-gmsh.md` | title: Gmsh Mesh | headings: Gmsh Mesh; Geometry; Meshing using Python Script
+- `docs/user/examples/poroelastic-outerrise-2d/step03-faults-flexure.md` | title: Step 3: Faults with flexure | headings: Step 3: Faults with flexure; Simulation parameters; Running the simulation
+- `docs/user/examples/poroelastic-outerrise-2d/step02-no-faults-flexure.md` | title: Step 2: No faults with flexure | headings: Step 2: No faults with flexure; Simulation parameters; Running the simulation
+- `docs/user/examples/poroelastic-outerrise-2d/meshing-gmsh.md` | title: Gmsh Mesh | headings: Gmsh Mesh; Geometry; Meshing using Python Script
+- `docs/user/examples/poroelastic-outerrise-2d/common-information.md` | title: Common Information | headings: Common Information; Metadata, Mesh, and Output; Physics
+- `docs/user/examples/magma-2d/step02-inflation-statevars.md` | title: Step 2: Magma inflation with evolution of porosity | headings: Step 2: Magma inflation with evolution of porosity; Simulation parameters; Poroelasticity with porosity state variable requires solution with time derivatives
+- `docs/user/examples/magma-2d/meshing-gmsh.md` | title: Gmsh Mesh | headings: Gmsh Mesh; Geometry; Meshing using Python Script
+- `docs/user/examples/magma-2d/common-information.md` | title: Common Information | headings: Common Information; Metadata, Mesh, and Output; Physics
+- `docs/user/examples/crustal-strikeslip-3d/meshing-gmsh.md` | title: Gmsh Mesh | headings: Gmsh Mesh; Geometry; Meshing using Python Script
+- `docs/user/examples/crustal-strikeslip-3d/common-information.md` | title: Common Information | headings: Common Information; Metadata, Mesh, and Output; Model coordinate system is UTM zone 11
+- `docs/user/examples/crustal-strikeslip-2d/meshing-gmsh.md` | title: Gmsh Mesh | headings: Gmsh Mesh; Geometry; Meshing using Python Script
+- `docs/user/examples/crustal-strikeslip-2d/common-information.md` | title: Common Information | headings: Common Information; Metadata, Mesh, and Output; Model coordinate system is UTM zone 11
+- `docs/user/examples/box-3d/step03-sheardisptract.md` | title: Step 3: Shear Displacement and Tractions | headings: Step 3: Shear Displacement and Tractions; Simulation parameters; Running the simulation
+- `docs/user/examples/box-3d/step02-sheardisp.md` | title: Step 2: Shear Displacement | headings: Step 2: Shear Displacement; Simulation parameters; Running the simulation
+- `docs/user/examples/box-3d/step01-axialdisp.md` | title: Step 1: Axial Extension | headings: Step 1: Axial Extension; Simulation parameters; Running the simulation
+- `docs/user/examples/box-3d/meshing-gmsh.md` | title: Gmsh Mesh | headings: Gmsh Mesh; Geometry; Meshing using Python Script
+- `docs/user/examples/box-3d/common-information.md` | title: Common Information | headings: Common Information; Metadata, Mesh, and Output; Set the filename and the dimension of the default Cartesian coordinate system.
+- `docs/user/examples/box-2d/step03-sheardisptract.md` | title: Step 3: Shear Displacement and Tractions | headings: Step 3: Shear Displacement and Tractions; Simulation parameters; Degrees of freedom (dof) 0 and 1 correspond to the x and y displacements.
+- `docs/user/examples/box-2d/step02-sheardisp.md` | title: Step 2: Shear Displacement | headings: Step 2: Shear Displacement; Simulation parameters; Degree of freedom (dof) 1 corresponds to y displacement.
+- `docs/user/examples/box-2d/step01-axialdisp.md` | title: Step 1: Axial Extension | headings: Step 1: Axial Extension; Simulation parameters; Set Ux=+2.0*m on the +x boundary.
+- `docs/user/examples/box-2d/common-information.md` | title: Common Information | headings: Common Information; Metadata, Mesh, and Output; Physics
+- `docs/user/components/problems/TimeDependent.md` | title: TimeDependent | headings: TimeDependent; Pyre Facilities; Pyre Properties
+- `docs/user/governingeqns/elasticity/bulk-rheologies/effective-stress.md` | title: Effective Stress Formulation for Viscoelastic Materials | headings: Effective Stress Formulation for Viscoelastic Materials; \end{gathered}; \boldsymbol{\sigma}^{dev}(t + \Delta t) = \frac{1}{a_{E}} \left[\boldsymbol{\epsilon}^{\prime dev}(t + \Delta t) - \boldsymbol{\Delta \epsilon}^{creepdev} \right] + \boldsymbol{\sigma}^{refdev},
+- `docs/user/governingeqns/elasticity/bulk-rheologies/powerlaw.md` | title: Power-law Viscoelastic Models | headings: Power-law Viscoelastic Models; \dot{\epsilon}_{11}^{creep} = A_{E} \exp\left(\frac{-Q}{RT}\right) \left(\sigma_{1} - \sigma_{3}\right)^{n} = A_{E} \exp\left(\frac{-Q}{RT}\right) \sigma_{d}^{n},; \sqrt{\dot{L}_{2}^{\prime creep}} = A_{M} \exp \left(\frac{-Q}{RT}\right)\sqrt{J_{2}^{\prime}}^{n},
+- `docs/user/governingeqns/elasticity/bulk-rheologies/linear-genmaxwell.md` | title: Generalized Maxwell Viscoelastic Models | headings: Generalized Maxwell Viscoelastic Models; \boldsymbol{\sigma}^{dev} = 2\mu_{tot}\left[\mu_{0}\boldsymbol{\epsilon}^{dev} + \sum_{i=1}^{N}\mu_{i}\boldsymbol{q}^{i} - \boldsymbol{\epsilon}^{refdev}\right] + \boldsymbol{\sigma}^{refdev}; P = 3K(\theta - \theta^{ref}) + P^{ref},; \boldsymbol{\dot{q}}^{i} + \frac{1}{\tau_{i}}\boldsymbol{q}^{i} = \boldsymbol{\dot{\epsilon}}^{dev}.
+- `docs/user/components/problems/InitialConditionPatch.md` | title: InitialConditionPatch | headings: InitialConditionPatch; Pyre Facilities; Pyre Properties
+- `docs/user/components/meshio/OutputSolnBoundary.md` | title: OutputSolnBoundary | headings: OutputSolnBoundary; Pyre Facilities; Pyre Properties
+- `docs/user/components/meshio/OutputPhysics.md` | title: OutputPhysics | headings: OutputPhysics; Pyre Facilities; Pyre Properties
+- `examples/strikeslip-2d/cfcatmip_parameters.txt` | title: Sample parameter file for pylith_cfcatmip model. | headings: Sample parameter file for pylith_cfcatmip model.; Data files; Model parameters
+- `examples/strikeslip-2d/catmip_parameters.txt` | title: Sample parameter file for pylith_catmip model. | headings: Sample parameter file for pylith_catmip model.; Data files; Model parameters
+- `docs/user/meshing/gmsh-utils.md` | title: `gmsh_utils` | headings: `gmsh_utils`; `GenerateMesh` Application Template; MaterialGroup
+- `docs/user/physics/bc/time-dependent.md` | title: Time-Dependent Boundary Conditions | headings: Time-Dependent Boundary Conditions; Time-Dependent Dirichlet Boundary Conditions; Neumann Time-Dependent Boundary Conditions
+- `docs/user/governingeqns/elasticity/infinitesimal-strain-dynamic.md` | title: Dynamic | headings: Dynamic; Residual Pointwise Functions; Jacobian Pointwise Functions
+- `docs/user/components/materials/AuxSubfieldsElasticity.md` | title: AuxSubfieldsElasticity | headings: AuxSubfieldsElasticity; Pyre Facilities; Example
+- `docs/user/components/bc/NeumannTimeDependent.md` | title: NeumannTimeDependent | headings: NeumannTimeDependent; Pyre Facilities; Pyre Properties
+- `docs/user/components/bc/DirichletTimeDependent.md` | title: DirichletTimeDependent | headings: DirichletTimeDependent; Pyre Facilities; Pyre Properties
+- `docs/user/governingeqns/elasticity/bulk-rheologies/elasticity-constitutive.md` | title: Elasticity Constitutive Models | headings: Elasticity Constitutive Models; J_{f3}^{uu} = \frac{\partial F^{u_{i}}}{\partial u_{j}}.; \end{gathered}
+- `docs/developer/design/code-layout.md` | title: Code Layout | headings: Code Layout; Directory Structure; └── manual # Manual full-scale tests
+- `docs/user/physics/materials/poroelasticity.md` | title: Poroelasticity | headings: Poroelasticity; | `IsotropicLinearPoroelasticity` | Isotropic, linear poroelasticity |; | `reference_strain`           |   O   | xx, yy, zz, xy, yz, xz |
+- `docs/user/physics/materials/incompressible-elasticity.md` | title: Incompressible Elasticity | headings: Incompressible Elasticity; | `IsotropicLinearincompElasticity` | Isotropic, linear incompressible elasticity |; | `reference_strain`           |  O  |  O  |  O  |  O  | xx, yy, zz, xy, yz, xz |
+- `docs/user/physics/materials/elasticity.md` | title: Elasticity | headings: Elasticity; | `IsotropicDruckerPrager`    | Isotropic, Drucker-Prager elastoplasticity     |; | `plastic_strain`                 |     |     |     |     |  X  | xx, yy, zz, xy, yz, xz |
+- `docs/user/components/materials/Poroelasticity.md` | title: Poroelasticity | headings: Poroelasticity; Pyre Facilities; Pyre Properties
+- `docs/user/components/materials/IsotropicPowerLaw.md` | title: IsotropicPowerLaw | headings: IsotropicPowerLaw; Pyre Facilities; Pyre Properties
+- `docs/user/components/materials/IsotropicLinearPoroelasticity.md` | title: IsotropicLinearPoroelasticity | headings: IsotropicLinearPoroelasticity; Pyre Facilities; Pyre Properties
+- `docs/user/components/materials/IsotropicLinearMaxwell.md` | title: IsotropicLinearMaxwell | headings: IsotropicLinearMaxwell; Pyre Facilities; Pyre Properties
+- `docs/user/components/materials/IsotropicLinearIncompElasticity.md` | title: IsotropicLinearIncompElasticity | headings: IsotropicLinearIncompElasticity; Pyre Facilities; Pyre Properties
+- `docs/user/components/materials/IsotropicLinearGenMaxwell.md` | title: IsotropicLinearGenMaxwell | headings: IsotropicLinearGenMaxwell; Pyre Facilities; Pyre Properties
+- `docs/user/components/materials/IsotropicLinearElasticity.md` | title: IsotropicLinearElasticity | headings: IsotropicLinearElasticity; Pyre Facilities; Pyre Properties
+- `docs/user/components/materials/IncompressibleElasticity.md` | title: IncompressibleElasticity | headings: IncompressibleElasticity; Pyre Facilities; Pyre Properties
+- `docs/user/components/materials/Elasticity.md` | title: Elasticity | headings: Elasticity; Pyre Facilities; Pyre Properties
+- `docs/user/components/materials/DerivedSubfieldsPoroelasticity.md` | title: DerivedSubfieldsPoroelasticity | headings: DerivedSubfieldsPoroelasticity; Pyre Facilities; Example
+- `docs/user/components/materials/DerivedSubfieldsElasticity.md` | title: DerivedSubfieldsElasticity | headings: DerivedSubfieldsElasticity; Pyre Facilities; Example
+- `docs/user/components/faults/AuxSubfieldsFault.md` | title: AuxSubfieldsFault | headings: AuxSubfieldsFault; Pyre Facilities; Example
+- `docs/user/components/bc/ZeroDB.md` | title: ZeroDB | headings: ZeroDB; Pyre Properties; Example
+- `docs/user/governingeqns/elasticity/bulk-rheologies/linear-elastic.md` | title: Linear Isotropic Elastic Models | headings: Linear Isotropic Elastic Models; \sigma_{ij} = \lambda \epsilon_{kk} \delta{ij} + 2 \mu \epsilon_{ij}; \sigma_{ij} = \sigma_{ij}^{ref} + \lambda\left(\epsilon_{kk} - \epsilon_{kk}^{ref}\right) \delta{ij} + 2 \mu \left(\epsilon_{ij} - \epsilon_{ij}^{ref}\right).
+- `docs/user/examples/subduction-2d/meshing-cubit.md` | title: Cubit Mesh | headings: Cubit Mesh; Geometry; Meshing using Python script
+- `docs/user/examples/strikeslip-2d/meshing-cubit.md` | title: Cubit Mesh | headings: Cubit Mesh; Geometry; Meshing using Python Script
+- `docs/user/examples/reverse-2d/meshing-cubit.md` | title: Cubit Mesh | headings: Cubit Mesh; Geometry; Meshing using Python Script
+- `docs/user/examples/magma-2d/meshing-cubit.md` | title: Cubit Mesh | headings: Cubit Mesh; Geometry; Meshing using Python script
+- `docs/user/examples/crustal-strikeslip-3d/meshing-cubit.md` | title: Cubit Mesh | headings: Cubit Mesh; Geometry; Meshing using Python Script
+- `docs/user/examples/crustal-strikeslip-2d/meshing-cubit.md` | title: Cubit Mesh | headings: Cubit Mesh; Geometry; Meshing using Python Script
+- `docs/user/components/materials/Material.md` | title: Material | headings: Material; Pyre Facilities; Pyre Properties
+- `docs/user/components/materials/AuxSubfieldsPoroelasticity.md` | title: AuxSubfieldsPoroelasticity | headings: AuxSubfieldsPoroelasticity; Pyre Facilities; Example
+- `docs/user/components/materials/AuxSubfieldsIsotropicPowerLaw.md` | title: AuxSubfieldsIsotropicPowerLaw | headings: AuxSubfieldsIsotropicPowerLaw; Pyre Facilities; Example
+- `docs/user/components/materials/AuxSubfieldsIsotropicLinearPoroelasticity.md` | title: AuxSubfieldsIsotropicLinearPoroelasticity | headings: AuxSubfieldsIsotropicLinearPoroelasticity; Pyre Facilities; Example
+- `docs/user/components/materials/AuxSubfieldsIsotropicLinearMaxwell.md` | title: AuxSubfieldsIsotropicLinearMaxwell | headings: AuxSubfieldsIsotropicLinearMaxwell; Pyre Facilities; Example
+- `docs/user/components/materials/AuxSubfieldsIsotropicLinearGenMaxwell.md` | title: AuxSubfieldsIsotropicLinearGenMaxwell | headings: AuxSubfieldsIsotropicLinearGenMaxwell; Pyre Facilities; Example
+- `docs/user/components/materials/AuxSubfieldsIsotropicLinearElasticity.md` | title: AuxSubfieldsIsotropicLinearElasticity | headings: AuxSubfieldsIsotropicLinearElasticity; Pyre Facilities; Example
+- `docs/user/components/bc/BoundaryCondition.md` | title: BoundaryCondition | headings: BoundaryCondition; Pyre Facilities; Pyre Properties
+- `docs/user/components/materials/RheologyPoroelasticity.md` | title: RheologyPoroelasticity | headings: RheologyPoroelasticity; Pyre Facilities
+- `docs/user/components/materials/RheologyIncompressibleElasticity.md` | title: RheologyIncompressibleElasticity | headings: RheologyIncompressibleElasticity; Pyre Facilities
+- `docs/user/components/materials/RheologyElasticity.md` | title: RheologyElasticity | headings: RheologyElasticity; Pyre Facilities
+- `docs/user/components/materials/Homogeneous.md` | title: Homogeneous | headings: Homogeneous; Pyre Facilities
+- `docs/user/governingeqns/elasticity/bulk-rheologies/linear-maxwell.md` | title: Linear Viscoelastic Models | headings: Linear Viscoelastic Models; \frac{\mathit{d\epsilon}_{Total}}{\mathit{dt}} = \frac{\mathit{d\epsilon}_{D}}{\mathit{dt}} + \frac{\mathit{d\epsilon}_{S}}{\mathit{dt}} = \frac{\mathit{\sigma}}{\mathit{\eta}} + \frac{1}{\mathit{E}}\frac{\mathit{d\sigma}}{\mathit{dt}},; \mathit{\sigma}(\mathit{t}) = \mathit{E\epsilon}(\mathit{t}) + \mathit{\eta}\frac{\mathit{d\epsilon}(\mathit{t})}{\mathit{dt}}.
+- `examples/meshing-cubit/surface-nurbs/subduction/splay_points.txt` | title: Vertical profiles for splay fault geometry. | headings: Vertical profiles for splay fault geometry.
+- `docs/user/physics/bc/absorbing-dampers.md` | title: Absorbing Boundary Conditions | headings: Absorbing Boundary Conditions
+- `docs/user/governingeqns/incompressible-elasticity/bulk-rheologies/linear-elastic.md` | title: Linear Isotropic Incompressible Elastic Models | headings: Linear Isotropic Incompressible Elastic Models

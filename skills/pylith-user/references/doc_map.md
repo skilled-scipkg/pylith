@@ -1,0 +1,71 @@
+# pylith documentation map: User
+
+Generated from documentation roots:
+- `docs`
+- `release-notes`
+- `examples`
+- `docs/user/examples`
+- `tests`
+- `pylith/testing`
+
+Total docs grouped in this topic: 58
+
+## File inventory
+- `docs/user/glossary/index.md` | title: Glossary | headings: Glossary; Pyre; DMPlex
+- `docs/user/components/index.md` | title: PyLith Components | headings: PyLith Components; :::{toctree}; maxdepth: 2
+- `docs/user/index.md` | title: User Guide | headings: User Guide
+- `docs/user/components/utils/index.md` | title: utils | headings: utils; :::{toctree}; maxdepth: 1
+- `docs/user/components/topology/index.md` | title: topology | headings: topology; :::{toctree}; maxdepth: 1
+- `docs/user/components/testing/index.md` | title: testing | headings: testing; :::{toctree}; maxdepth: 1
+- `docs/user/components/problems/index.md` | title: problems | headings: problems; :::{toctree}; maxdepth: 1
+- `docs/user/components/meshio/index.md` | title: meshio | headings: meshio; :::{toctree}; maxdepth: 1
+- `docs/user/components/faults/index.md` | title: faults | headings: faults; :::{toctree}; maxdepth: 1
+- `docs/user/components/bc/index.md` | title: bc | headings: bc; :::{toctree}; maxdepth: 1
+- `docs/user/components/apps/index.md` | title: apps | headings: apps; :::{toctree}; maxdepth: 1
+- `docs/user/physics/index.md` | title: Physics Implementations | headings: Physics Implementations
+- `docs/user/meshing/index.md` | title: Mesh generation with Cubit and Gmsh | headings: Mesh generation with Cubit and Gmsh
+- `docs/user/file-formats/index.md` | title: File Formats | headings: File Formats
+- `docs/user/appendices/index.md` | title: Appendices | headings: Appendices
+- `docs/user/governingeqns/poroelasticity/index.md` | title: Porolasticity | headings: Porolasticity
+- `docs/user/governingeqns/incompressible-elasticity/index.md` | title: Incompressible Elasticity | headings: Incompressible Elasticity
+- `docs/user/governingeqns/elasticity/index.md` | title: Elasticity | headings: Elasticity
+- `docs/user/governingeqns/elasticity/bulk-rheologies/index.md` | title: Bulk Rheologies | headings: Bulk Rheologies; | 2nd deviatoric strain invariant |       $\mathit{L}_{2}^{\prime}$        | $\frac{1}{2}\boldsymbol{\epsilon}^{dev}:\boldsymbol{\epsilon}^{dev}$ |
+- `docs/user/governingeqns/poroelasticity/bulk-rheologies/index.md` | title: Bulk Rheologies | headings: Bulk Rheologies
+- `docs/user/governingeqns/incompressible-elasticity/bulk-rheologies/index.md` | title: Bulk Rheologies | headings: Bulk Rheologies
+- `docs/user/problems/nondimensionalization.md` | title: Nondimensionalization | headings: Nondimensionalization; Scales; QuasistaticElasticity
+- `docs/user/file-formats/points-list.md` | title: Points List File | headings: Points List File; Comments are limited to complete lines. The default delimiter for comments; is '#', which can be changed via parameters. Additionally, the delimiter
+- `docs/user/file-formats/meshio-ascii.md` | title: PyLith Mesh ASCII File | headings: PyLith Mesh ASCII File; // additional groups can be listed here
+- `docs/user/governingeqns/poroelasticity/prescribed-slip.md` | title: Infinitesimal Strain and Prescribed Fault Slip | headings: Infinitesimal Strain and Prescribed Fault Slip; \end{gathered}; |                                |        $\gamma$         | Source density; rate of injected fluid per unit volume of the porous solid                                    |
+- `docs/user/governingeqns/poroelasticity/infinitesimal-strain.md` | title: Infinitesimal Strain and No Faults | headings: Infinitesimal Strain and No Faults; Constitutive Behavior; |                                |        $\gamma$         | Source density; rate of injected fluid per unit volume of the porous solid                                    |
+- `docs/user/governingeqns/elasticity/prescribed-slip.md` | title: Infinitesimal Strain and Prescribed Fault Slip | headings: Infinitesimal Strain and Prescribed Fault Slip; \end{gathered}; |                                |        $\vec{d}$        | Slip vector field on the fault corresponding to a jump in the displacement field across the fault |
+- `docs/user/governingeqns/elasticity/nondimensionalization.md` | title: Nondimensionalization | headings: Nondimensionalization; Inertia; | $\rho_o = \mu_o \frac{t_o^2}{x_o^2}$    | Density scale       |
+- `docs/user/components/testing/UnitTestApp.md` | title: UnitTestApp | headings: UnitTestApp; Pyre Facilities; Pyre Properties
+- `docs/user/components/problems/Problem.md` | title: Problem | headings: Problem; Pyre Facilities; Pyre Properties
+- `docs/user/components/faults/KinSrc.md` | title: KinSrc | headings: KinSrc; Pyre Facilities; Pyre Properties
+- `docs/user/components/faults/FaultCohesive.md` | title: FaultCohesive | headings: FaultCohesive; Pyre Facilities; Pyre Properties
+- `docs/user/components/apps/PyLithApp.md` | title: PyLithApp | headings: PyLithApp; Pyre Facilities; Pyre Properties
+- `docs/user/components/apps/EqInfoApp.md` | title: EqInfoApp | headings: EqInfoApp; Pyre Facilities; Pyre Properties
+- `docs/user/components/apps/ConvertMeshApp.md` | title: ConvertMeshApp | headings: ConvertMeshApp; Pyre Facilities; Pyre Properties
+- `docs/user/benchmarks/scec-dynrup.md` | title: SCEC Dynamic Rupture Benchmarks | headings: SCEC Dynamic Rupture Benchmarks
+- `docs/user/governingeqns/poroelasticity/nondimensionalization.md` | title: Nondimensionalization | headings: Nondimensionalization; |       $\boldsymbol{k}_o = \frac{\boldsymbol{k}}{x_o^2}$       | Permeability scale |
+- `docs/user/governingeqns/incompressible-elasticity/nondimensionalization.md` | title: Nondimensionalization | headings: Nondimensionalization; | $\rho_o = \mu_o \frac{t_o^2}{x_o^2}$    | Density scale       |
+- `docs/user/components/topology/Subfield.md` | title: Subfield | headings: Subfield; Pyre Properties
+- `docs/user/components/topology/MeshImporterDist.md` | title: MeshImporterDist | headings: MeshImporterDist; Pyre Facilities
+- `docs/user/components/problems/SolutionSubfield.md` | title: SolutionSubfield | headings: SolutionSubfield; Pyre Properties
+- `docs/user/components/problems/Solution.md` | title: Solution | headings: Solution; Pyre Facilities
+- `docs/user/components/problems/SolnDisp.md` | title: SolnDisp | headings: SolnDisp; Pyre Facilities
+- `docs/user/components/problems/SingleProblem.md` | title: SingleProblem | headings: SingleProblem; Pyre Facilities
+- `docs/user/components/problems/ProgressMonitor.md` | title: ProgressMonitor | headings: ProgressMonitor; Pyre Properties
+- `docs/user/components/problems/Physics.md` | title: Physics | headings: Physics; Pyre Facilities
+- `docs/user/components/problems/InitialCondition.md` | title: InitialCondition | headings: InitialCondition; Pyre Properties
+- `docs/user/components/faults/SingleRupture.md` | title: SingleRupture | headings: SingleRupture; Pyre Facilities
+- `docs/user/components/utils/PropertyList.md` | title: PropertyList | headings: PropertyList
+- `docs/user/components/utils/NullComponent.md` | title: NullComponent | headings: NullComponent
+- `docs/user/components/utils/EmptyBin.md` | title: EmptyBin | headings: EmptyBin
+- `docs/user/components/utils/DumpParameters.md` | title: DumpParameters | headings: DumpParameters
+- `docs/user/components/utils/CollectVersionInfo.md` | title: CollectVersionInfo | headings: CollectVersionInfo
+- `docs/user/components/topology/MeshRefiner.md` | title: MeshRefiner | headings: MeshRefiner
+- `docs/user/components/topology/MeshGenerator.md` | title: MeshGenerator | headings: MeshGenerator
+- `docs/user/components/meshio/MeshIOObj.md` | title: MeshIOObj | headings: MeshIOObj
+- `docs/user/components/meshio/DataWriter.md` | title: DataWriter | headings: DataWriter
+- `docs/user/governingeqns/poroelasticity/bulk-rheologies/linear-elastic.md` | title: Linear Isotropic | headings: Linear Isotropic; \end{gathered}

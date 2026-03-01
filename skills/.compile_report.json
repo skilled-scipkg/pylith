@@ -1,0 +1,380 @@
+{
+  "compile_memory_path": "skills/.evidence/memory.md",
+  "compiled_package_id": "pylith",
+  "evidence": {
+    "core_skills": [
+      "pylith-examples-and-tutorials",
+      "pylith-inputs-and-modeling",
+      "pylith-user",
+      "pylith-simulation-workflows",
+      "pylith-getting-started",
+      "pylith-release-notes"
+    ],
+    "evidence_dir": "skills/.evidence",
+    "files": [
+      "skills/.evidence/pylith-examples-and-tutorials.md",
+      "skills/.evidence/pylith-inputs-and-modeling.md",
+      "skills/.evidence/pylith-user.md",
+      "skills/.evidence/pylith-simulation-workflows.md",
+      "skills/.evidence/pylith-getting-started.md",
+      "skills/.evidence/pylith-release-notes.md"
+    ]
+  },
+  "generation": {
+    "docs_only": false,
+    "generator_script": "sci-skills-generator/scripts/generate_skills_folder.py",
+    "max_skills": 30,
+    "return_code": 0,
+    "status": "ok"
+  },
+  "mode": "compile",
+  "pass_scope_diffs": {
+    "pass_2": {
+      "added": [],
+      "changed": [
+        "skills/pylith-examples-and-tutorials/SKILL.md",
+        "skills/pylith-getting-started/SKILL.md",
+        "skills/pylith-inputs-and-modeling/SKILL.md",
+        "skills/pylith-release-notes/SKILL.md",
+        "skills/pylith-simulation-workflows/SKILL.md",
+        "skills/pylith-user/SKILL.md"
+      ],
+      "deleted": [],
+      "modified": [
+        "skills/pylith-examples-and-tutorials/SKILL.md",
+        "skills/pylith-getting-started/SKILL.md",
+        "skills/pylith-inputs-and-modeling/SKILL.md",
+        "skills/pylith-release-notes/SKILL.md",
+        "skills/pylith-simulation-workflows/SKILL.md",
+        "skills/pylith-user/SKILL.md"
+      ]
+    },
+    "pass_3": {
+      "added": [
+        "skills/.compile_report.json",
+        "skills/.evidence/memory.md"
+      ],
+      "changed": [
+        "skills/.compile_report.json",
+        "skills/.evidence/memory.md",
+        "skills/pylith-analysis-and-output/SKILL.md",
+        "skills/pylith-analysis-and-output/references/source_map.md",
+        "skills/pylith-api-and-scripting/SKILL.md",
+        "skills/pylith-api-and-scripting/references/source_map.md",
+        "skills/pylith-build-and-install/SKILL.md",
+        "skills/pylith-build-and-install/references/source_map.md",
+        "skills/pylith-developer-guide/SKILL.md",
+        "skills/pylith-developer-guide/references/source_map.md",
+        "skills/pylith-examples-and-tutorials/SKILL.md",
+        "skills/pylith-examples-and-tutorials/references/source_map.md",
+        "skills/pylith-getting-started/references/source_map.md",
+        "skills/pylith-index/SKILL.md",
+        "skills/pylith-inputs-and-modeling/references/source_map.md",
+        "skills/pylith-parallel-hpc/SKILL.md",
+        "skills/pylith-parallel-hpc/references/source_map.md",
+        "skills/pylith-references/SKILL.md",
+        "skills/pylith-references/references/source_map.md",
+        "skills/pylith-release-notes/references/source_map.md",
+        "skills/pylith-requirements/SKILL.md",
+        "skills/pylith-requirements/references/source_map.md",
+        "skills/pylith-simulation-workflows/references/doc_map.md",
+        "skills/pylith-simulation-workflows/references/source_map.md",
+        "skills/pylith-tests/SKILL.md",
+        "skills/pylith-tests/references/source_map.md",
+        "skills/pylith-theory-and-methods/SKILL.md",
+        "skills/pylith-theory-and-methods/references/source_map.md",
+        "skills/pylith-troubleshooting/SKILL.md",
+        "skills/pylith-troubleshooting/references/source_map.md",
+        "skills/pylith-user/references/source_map.md"
+      ],
+      "deleted": [],
+      "modified": [
+        "skills/pylith-analysis-and-output/SKILL.md",
+        "skills/pylith-analysis-and-output/references/source_map.md",
+        "skills/pylith-api-and-scripting/SKILL.md",
+        "skills/pylith-api-and-scripting/references/source_map.md",
+        "skills/pylith-build-and-install/SKILL.md",
+        "skills/pylith-build-and-install/references/source_map.md",
+        "skills/pylith-developer-guide/SKILL.md",
+        "skills/pylith-developer-guide/references/source_map.md",
+        "skills/pylith-examples-and-tutorials/SKILL.md",
+        "skills/pylith-examples-and-tutorials/references/source_map.md",
+        "skills/pylith-getting-started/references/source_map.md",
+        "skills/pylith-index/SKILL.md",
+        "skills/pylith-inputs-and-modeling/references/source_map.md",
+        "skills/pylith-parallel-hpc/SKILL.md",
+        "skills/pylith-parallel-hpc/references/source_map.md",
+        "skills/pylith-references/SKILL.md",
+        "skills/pylith-references/references/source_map.md",
+        "skills/pylith-release-notes/references/source_map.md",
+        "skills/pylith-requirements/SKILL.md",
+        "skills/pylith-requirements/references/source_map.md",
+        "skills/pylith-simulation-workflows/references/doc_map.md",
+        "skills/pylith-simulation-workflows/references/source_map.md",
+        "skills/pylith-tests/SKILL.md",
+        "skills/pylith-tests/references/source_map.md",
+        "skills/pylith-theory-and-methods/SKILL.md",
+        "skills/pylith-theory-and-methods/references/source_map.md",
+        "skills/pylith-troubleshooting/SKILL.md",
+        "skills/pylith-troubleshooting/references/source_map.md",
+        "skills/pylith-user/references/source_map.md"
+      ]
+    }
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "return_code": 0,
+      "status": "ok"
+    },
+    {
+      "pass": 2,
+      "return_code": 0,
+      "status": "ok"
+    },
+    {
+      "pass": 3,
+      "return_code": 0,
+      "status": "ok"
+    }
+  ],
+  "profile": {
+    "docs_dirs": [
+      "docs",
+      "release-notes"
+    ],
+    "docs_only": false,
+    "notes": [
+      "Canonical repository layout verified in docs/developer/design/code-layout.md.",
+      "Top-level docs files such as README.md, CHANGES.md, and INSTALL live outside docs_dirs.",
+      "playpen is treated as exploratory scratch space and excluded from primary tutorial/test roots."
+    ],
+    "package_name": "pylith",
+    "profile_path": "skills/.compile_profile.json",
+    "profile_source": "file",
+    "source_dirs": [
+      "applications",
+      "libsrc",
+      "modulesrc",
+      "pylith"
+    ],
+    "test_dirs": [
+      "tests",
+      "pylith/testing"
+    ],
+    "tutorial_dirs": [
+      "examples",
+      "docs/user/examples"
+    ],
+    "warnings": []
+  },
+  "project_root": "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/pylith-pylith",
+  "run_id": "compile_20260301T013954191342Z",
+  "skill_plan": {
+    "available_skill_ids": [
+      "pylith-analysis-and-output",
+      "pylith-api-and-scripting",
+      "pylith-build-and-install",
+      "pylith-developer-guide",
+      "pylith-examples-and-tutorials",
+      "pylith-getting-started",
+      "pylith-index",
+      "pylith-inputs-and-modeling",
+      "pylith-parallel-hpc",
+      "pylith-references",
+      "pylith-release-notes",
+      "pylith-requirements",
+      "pylith-simulation-workflows",
+      "pylith-tests",
+      "pylith-theory-and-methods",
+      "pylith-troubleshooting",
+      "pylith-user"
+    ],
+    "core_skill_ids": [
+      "pylith-examples-and-tutorials",
+      "pylith-inputs-and-modeling",
+      "pylith-user",
+      "pylith-simulation-workflows",
+      "pylith-getting-started",
+      "pylith-release-notes"
+    ],
+    "deferred_gaps": [
+      "Decide whether legacy release announcement files in release-notes should remain in generated topic coverage or be excluded.",
+      "Decide whether playpen should be represented as an advanced experimental workflow skill."
+    ],
+    "goal": "Generate docs-first PyLith skills, then enrich and audit core workflows in passes 2/3.",
+    "mode": "compile",
+    "priority_skills": [
+      {
+        "action": "create",
+        "must_cover": [
+          "route user vs developer requests to topic skills",
+          "list docs/tutorial/test/source roots",
+          "document escalation from docs to source inspection"
+        ],
+        "reason": "A stable router is required to keep responses docs-first and direct requests to topic skills.",
+        "skill_id": "pylith-index",
+        "source_hints": [
+          "docs/index.md",
+          "docs/user/index.md",
+          "docs/developer/index.md",
+          "skills/.compile_profile.json"
+        ]
+      },
+      {
+        "action": "create",
+        "must_cover": [
+          "quickstart prerequisites",
+          "first simulation run path",
+          "common setup/import failures"
+        ],
+        "reason": "Onboarding and first-run setup are the highest-frequency early questions.",
+        "skill_id": "pylith-getting-started",
+        "source_hints": [
+          "docs/intro/quickstart.md",
+          "docs/user/install",
+          "docs/user/run-pylith",
+          "examples/README.md"
+        ]
+      },
+      {
+        "action": "create",
+        "must_cover": [
+          "dependency and environment setup",
+          "build/install workflow",
+          "developer build references and caveats"
+        ],
+        "reason": "Build and dependency failures block all downstream workflows.",
+        "skill_id": "pylith-build-and-install",
+        "source_hints": [
+          "docs/user/install",
+          "docs/developer/building/index.md",
+          "INSTALL",
+          "configure.ac"
+        ]
+      },
+      {
+        "action": "create",
+        "must_cover": [
+          "problem/material/boundary configuration flow",
+          "component reference navigation",
+          "high-impact validation knobs"
+        ],
+        "reason": "Model configuration drives correctness for most PyLith simulations.",
+        "skill_id": "pylith-inputs-and-modeling",
+        "source_hints": [
+          "docs/user/components",
+          "docs/user/physics",
+          "docs/user/problems",
+          "pylith/materials",
+          "pylith/bc",
+          "libsrc/pylith/materials"
+        ]
+      },
+      {
+        "action": "create",
+        "must_cover": [
+          "run sequence and command utilities",
+          "output and checkpoint basics",
+          "restart flow and escalation to troubleshooting"
+        ],
+        "reason": "Run, restart, and output handling are common cross-cutting workflows.",
+        "skill_id": "pylith-simulation-workflows",
+        "source_hints": [
+          "docs/user/run-pylith",
+          "docs/user/file-formats",
+          "applications",
+          "pylith/apps",
+          "tests/fullscale"
+        ]
+      },
+      {
+        "action": "create",
+        "must_cover": [
+          "example suite selection by difficulty",
+          "stepwise execution pattern",
+          "mapping between docs tutorials and runnable example folders"
+        ],
+        "reason": "Worked examples are the best minimal reproductions for user questions.",
+        "skill_id": "pylith-examples-and-tutorials",
+        "source_hints": [
+          "docs/user/examples",
+          "examples"
+        ]
+      },
+      {
+        "action": "create",
+        "must_cover": [
+          "error triage questions",
+          "debugging tool entry points",
+          "test-level escalation from unit to MMS to fullscale"
+        ],
+        "reason": "Fast error triage and debugging guidance reduces iteration cost.",
+        "skill_id": "pylith-troubleshooting",
+        "source_hints": [
+          "docs/developer/debugging",
+          "docs/developer/testing",
+          "docs/user/examples/troubleshooting-2d",
+          "tests"
+        ]
+      },
+      {
+        "action": "audit",
+        "must_cover": [
+          "verify each core skill includes playbook plus doc/source maps",
+          "merge one-doc topics into advanced-topics when noisy",
+          "check skill-count cap and index routing"
+        ],
+        "reason": "Pass 3 needs a quality gate for map completeness and topic consolidation.",
+        "skill_id": "pylith-user",
+        "source_hints": [
+          "sci-skills-generator/references/generation-rubric.md",
+          "skills"
+        ]
+      }
+    ],
+    "version": 1,
+    "warnings": []
+  },
+  "skill_plan_path": "skills/.evidence/skill_plan.json",
+  "validation": {
+    "core_skills_checked": [
+      "pylith-examples-and-tutorials",
+      "pylith-inputs-and-modeling",
+      "pylith-user",
+      "pylith-simulation-workflows",
+      "pylith-getting-started",
+      "pylith-release-notes"
+    ],
+    "docs_only": false,
+    "errors": [
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/pylith-pylith/skills/pylith-examples-and-tutorials/SKILL.md: playbook missing required element containing 'convergence/validation'.",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/pylith-pylith/skills/pylith-inputs-and-modeling/SKILL.md: playbook missing required element containing 'convergence/validation'.",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/pylith-pylith/skills/pylith-user/SKILL.md: playbook missing required element containing 'convergence/validation'.",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/pylith-pylith/skills/pylith-simulation-workflows/SKILL.md: playbook missing required element containing 'convergence/validation'.",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/pylith-pylith/skills/pylith-getting-started/SKILL.md: playbook missing required element containing 'convergence/validation'.",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/pylith-pylith/skills/pylith-release-notes/SKILL.md: playbook missing required element containing 'convergence/validation'."
+    ],
+    "index_skills": [
+      "pylith-index"
+    ],
+    "missing_planned_skills": [],
+    "ok": false,
+    "planned_skill_ids": [
+      "pylith-index",
+      "pylith-getting-started",
+      "pylith-build-and-install",
+      "pylith-inputs-and-modeling",
+      "pylith-simulation-workflows",
+      "pylith-examples-and-tutorials",
+      "pylith-troubleshooting",
+      "pylith-user"
+    ],
+    "previous_source_inventory": {},
+    "skills_total": 17,
+    "source_inventory": {},
+    "source_links_total": 387,
+    "topic_skills": 16,
+    "warnings": []
+  }
+}
